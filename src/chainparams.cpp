@@ -10,9 +10,6 @@
 #include "util.h"
 
 #include <boost/assign/list_of.hpp>
-#include tinyformat.h
-#include utilstrencodings.h
-#include chainparamsseeds.h
 
 using namespace boost::assign;
 
