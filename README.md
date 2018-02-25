@@ -14,23 +14,15 @@ LoanOrLeaseZ is a project which was created in January 2017, launched by a group
   <li>Coin abbreviation : LOLZ</li>
   <li>Coin Type : Full POS</li>
   <li>Algorith : SHA256</li>
-  <li>Total Coin Supply : 100 Million</li>
-  <li>Premine : 15% (15 Million)</li>
-  <li>Masternode Rewards : 60%</li>
-  <li>Stake : 10 LOLZ</li>
-  <li>Minimum Stake Age : 8 hours</li>
+  <li>Total Coin Supply : 9 Million</li>
+  <li>Premine : 15% (3 Million)</li>
+  <li>Masternode Rewards : 80%</li>
+  <li>Stake : 7 LOLZ</li>
+  <li>Minimum Stake Age : 3 hours</li>
   <li>Number of confirmation : 10</li>
 </ul>
 
 For more information, as well as an immediately useable, binary version of the LoanOrLeaseZ Core software, see https://loanorleasez.io
-
-<h3>How to mine ?</h3>
-
-You can buy some coins and stake them to get rewards. More coins more rewards. Masternode require 50k coins. It just for big holders, we dont want to make more masternode because more reward, easy to get reward, price of coin will drop more. But with payout 50% profit from our mining, we hope LOLZ will rise up for along term.
-
-<h3>How to pay profit to holders ?</h3>
-
-A web wallet will be enabled on 12 Dec, all investors will create their own wallet and send coins to wallets and then wait 30 days. In 30days, your web wallet cannot do anything. We will distribution BTC profit from BTC address will be publiced before. 50% profit will be paid out to holder.
 
 <h3>Download</h3>
 
