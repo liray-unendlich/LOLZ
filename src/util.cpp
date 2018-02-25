@@ -1148,7 +1148,7 @@ void createConf()
 	srand(time(NULL));
 	ofstream pConf; 
 	pConf.open(GetConfigFile().generic_string().c_str());
-	const char* nodes =  "\nrpcport=23233"
+	const char* nodes =  "\nrpcport=19919"
 						 "\nrpcallowip=127.0.0.1"
 						 "\ndaemon=1"
 						 "\nserver=1"

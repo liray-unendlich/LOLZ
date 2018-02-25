@@ -74,32 +74,32 @@ public:
         //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
         //    CTxOut(empty)
         //  vMerkleTree: 12630d16a9
-        const char* pszTimestamp = "EthCash 21 Jun 2017.";
+        const char* pszTimestamp = "LoanOrLeaseZ 22 Feb 2018.";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1508398800, vin, vout, 0);
+        CTransaction txNew(1, 1519232349, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1508398800;
-        genesis.nBits    = 0x1f00ffff; 
-        genesis.nNonce   = 18491;
+        genesis.nTime    = 1519232349;
+        genesis.nBits    = 0x1d00ffff; 
+        genesis.nNonce   = 2428820365;
         hashGenesisBlock = genesis.GetHash();
+        assert(hashGenesisBlock == uint256("0x00000000400a9ba6a1c93e0894f31a72d3f6ebb0c3294e8c09af32934f5bb8e5"));
+        assert(genesis.hashMerkleRoot == uint256("0x8de3eba21e887b2e18b16310d5fbe677bd155db4067c01b34bbe937ba7fe0d3c"));
 
-        assert(hashGenesisBlock == uint256("0x000079ec233b9719094dd02e4a25e20526e904a512607d057992833efe515022"));
-        assert(genesis.hashMerkleRoot == uint256("0x70d846c99436cc745791a9ab0ec77b2619750126c576936bbddfd0df1f043105"));
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,33);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,85);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,153);
         base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1,40);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        vSeeds.push_back(CDNSSeedData("1",  "108.61.200.197"));
+        vSeeds.push_back(CDNSSeedData("1",  "127.0.0.1"));
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
         nPoolMaxTransactions = 3;
@@ -144,11 +144,9 @@ public:
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nBits  = 520159231; 
-        genesis.nNonce = 18491;
-   
-        assert(hashGenesisBlock == uint256("0x000079ec233b9719094dd02e4a25e20526e904a512607d057992833efe515022"));
-
+        genesis.nBits  = 0x1d00ffff; 
+        genesis.nNonce = 2428820365;
+        assert(hashGenesisBlock == uint256("0x00000000400a9ba6a1c93e0894f31a72d3f6ebb0c3294e8c09af32934f5bb8e5"));
         vFixedSeeds.clear();
         vSeeds.clear();
 
